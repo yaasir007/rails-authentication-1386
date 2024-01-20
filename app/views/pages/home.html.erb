@@ -1,8 +1,11 @@
 
+
 <% if user_signed_in? %>
 <p>Aila to enkr lor homepage </p>
 <% end %>
 
-
-
-<p>To lor main homepage acoz to parkor logged in MACRO </p>
+<% if !user_signed_in? %>
+  <div class='homepage-content'>
+    <p>To lor main homepage acoz to parkor logged in MACRO </p>
+  </div>
+<% end %>
